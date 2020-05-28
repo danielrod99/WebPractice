@@ -1,0 +1,23 @@
+{
+  "name": "webpractice",
+  "version": "1.0.0",
+  "description": "web development practice using HTML CSS JS jQuery",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielrod99/WebPractice.git"
+  },
+  "author": "daniel rodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielrod99/WebPractice/issues"
+  },
+  "homepage": "https://github.com/danielrod99/WebPractice#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
