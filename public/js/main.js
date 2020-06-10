@@ -58,6 +58,19 @@ $(document).ready(function(){
         },500)
         return false;
     })
+    $("#login form").submit(()=>{
+        var nombre=$("#name").val();
+        localStorage.setItem("nombre",nombre);
+    })
+    var form_name=localStorage.getItem('nombre');
+    if(form_name!=null){
+        $("#about p").html("<hr><br><strong>Bienvenido "+form_name+"</strong>"+'<br><a id="logout">Log out</a>');
+        $("#login").hide();
+    }
+    $("#logout").click(function(){
+        localStorage.clear();
+        location.reload();
+    })
 })
 
 function checkTheme(){
