@@ -4,8 +4,20 @@
         <title>Practicando con JS</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="public/css/styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/locale/es.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
+        <link id="theme" rel="stylesheet" href="/public/css/green.css">
+        <script src="/public/js/main.js"></script>     
     </head>
     <body>
+        <div id="select-theme">
+            <div id="toGreen"></div>
+            <div id="toRed"></div>
+            <div id="toBlue"></div>
+        </div>
       <section id="global">
           <header>
               <div id="logo"><h1>PROYECTO JS</h1></div>
@@ -20,24 +32,15 @@
           </nav>
         </header>
         <div id="slider">
-
+            <div class="bxslider">
+                <div><img src="/public/img/hojas.jpg" title="Hojas"></div>
+                <div><img src="/public/img/rojo.jpg" title="Rojo"></div>
+                <div><img src="/public/img/cielo.jpg" title="Cielo"></div>
+              </div>
         </div>
         <section id="content">
             <div id="posts">
-                <article class="post">
-                    <h2>Titulo del articulo</h2>
-                    <p class="date">Fecha de publicacion</p>
-                    <div class="clearfix"></div>
-                    <p class="contenido">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim gravida quam, ut lacinia metus pulvinar posuere. Donec sit amet risus tincidunt augue semper mattis. Sed sagittis, odio et auctor imperdiet, quam orci mattis enim, fringilla sollicitudin velit metus eu massa. Donec tortor orci, blandit sit amet lectus sed, consequat malesuada leo. Proin nec congue dolor. Phasellus suscipit viverra tellus a egestas. Phasellus dapibus et magna vel eleifend. Fusce lectus metus, cursus at dui sed, posuere bibendum arcu. Suspendisse semper porta nisl ut laoreet. Maecenas eu tortor ac lacus molestie pulvinar. </p>
-                    <a href="#" class="boton">Leer mas</a>
-                </article>
-                <article class="post">
-                    <h2>Titulo del articulo</h2>
-                    <p class="date">Fecha de publicacion</p>
-                    <div class="clearfix"></div>
-                    <p class="contenido">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim gravida quam, ut lacinia metus pulvinar posuere. Donec sit amet risus tincidunt augue semper mattis. Sed sagittis, odio et auctor imperdiet, quam orci mattis enim, fringilla sollicitudin velit metus eu massa. Donec tortor orci, blandit sit amet lectus sed, consequat malesuada leo. Proin nec congue dolor. Phasellus suscipit viverra tellus a egestas. Phasellus dapibus et magna vel eleifend. Fusce lectus metus, cursus at dui sed, posuere bibendum arcu. Suspendisse semper porta nisl ut laoreet. Maecenas eu tortor ac lacus molestie pulvinar. </p>
-                    <a href="#" class="boton">Leer mas</a>
-                </article>
+                
             </div>
            
             <aside id="sidebar">
@@ -64,6 +67,8 @@
       </section> 
       <footer>
           Practicando Desarrollo web basico
+
+          <a class="subir">Ir arriba</a>
       </footer> 
     </body>
 </html>
